@@ -43,8 +43,9 @@
             <tr>
                 <td>{{ $barang->id_barang }}</td>
                 <td>{{ $barang->nama_barang }}</td>
-                <td>{{ 'Rp'.number_format($b->harga, 2, ',', '.') }}</td>
+                <td>{{ 'Rp'.number_format($barang->harga, 2, ',', '.') }}</td>
                 <td>{{ $barang->stock }}</td>
+                <td>{{ $barang->id_supplier }}</td>
             </tr>    
             @endforeach
         </tbody>

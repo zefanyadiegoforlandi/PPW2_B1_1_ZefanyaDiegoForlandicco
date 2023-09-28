@@ -17,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome').redirect('/barang');
 });
-Route::get('/barang', [BarangController::class, 'index']);
+Route::get('/barang/index', [BarangController::class, 'index']);
